@@ -1,17 +1,13 @@
-STUDYNEST — PARENT REGISTER + WHATSAPP UPDATE
+STUDYNEST — COLOURFUL VERSION
 
-Added:
-- Dedicated Parent Register section
-- Parent name, phone and email
+Includes:
+- Colourful StudyNest design refresh
+- Parent Register
+- Multiple subject selection
 - Child age / school level
 - Location
-- Multiple subject selection: Mathematics, English, Science, Bahasa Melayu, Chinese, Other
 - Preferred tuition time
-- Optional message
-- Floating WhatsApp button
+- WhatsApp button using +6016 2818368
 
-IMPORTANT:
-The WhatsApp button currently uses a placeholder number 60123456789.
-Replace it in index.html with the real StudyNest WhatsApp number before publishing.
-
-The forms are front-end demo forms until connected to an email/form service.
+Upload/replace index.html and styles.css in the existing GitHub repository.
+Keep studynest-hero.jpg.
