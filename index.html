@@ -14,8 +14,8 @@
   <a class="logo" href="#home"><b>Study</b><span>Nest</span></a>
   <button class="menu" aria-label="Menu">☰</button>
   <nav>
-    <a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why Home Tuition?</a>
-    <a href="#rates">Tuition Rates</a><a href="#parent-register">Parent Register</a><a href="#tutor">Become a Home Tutor</a><a class="register" href="#contact">Register Now</a>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why Home Tuition & Online Classes?</a><p class="service-note">💻 Live Online Classes also available</p>
+    <a href="#rates">Tuition Rates</a><a href="#parent-register">Parent Register</a><a href="#youtube">YouTube</a><a href="#tutor">Become a Home Tutor</a><a class="register" href="#contact">Register Now</a>
   </nav>
 </header>
 
@@ -34,7 +34,7 @@
 <section id="services" class="section">
   <div class="heading"><small>OUR SERVICES</small><h2>Learning support that fits your family.</h2></div>
   <div class="grid">
-    <article><i>🏠</i><h3>Home Tuition</h3><p>One-to-one lessons at home with a tutor matched to your child's needs.</p></article>
+    <article><i>🏠</i><h3>Home Tuition & Online Classes</h3><p>One-to-one lessons at home with a tutor matched to your child's needs.</p></article>
     <article><i>💻</i><h3>Online Tuition</h3><p>Flexible online lessons when learning from home works best.</p></article>
     <article><i>🎯</i><h3>Exam Preparation</h3><p>Focused revision and practice for school examinations.</p></article>
     <article><i>🌱</i><h3>Foundation Skills</h3><p>Build confidence in reading, writing, mathematics and study habits.</p></article>
@@ -96,6 +96,13 @@
       <label><input type="checkbox" name="subjects" value="Chinese"> Chinese</label>
       <label><input type="checkbox" name="subjects" value="Other"> Other</label>
     </fieldset>
+    <select required name="classMode">
+      <option value="">Preferred tuition mode*</option>
+      <option>Home Tuition</option>
+      <option>Online Class</option>
+      <option>Either Home Tuition or Online Class</option>
+    </select>
+
     <select required name="time">
       <option value="">Preferred tuition time*</option>
       <option>Weekday morning</option>
@@ -108,6 +115,32 @@
     <button class="send" type="submit">Register as a Parent</button>
     <p id="parentStatus"></p>
   </form>
+</section>
+
+
+<section id="youtube" class="youtube-section section">
+  <div class="youtube-copy">
+    <span class="youtube-kicker">🎥 STUDYNEST ON YOUTUBE</span>
+    <h2>Learn with StudyNest.</h2>
+    <p>Watch our learning tips, tuition content and StudyNest updates on YouTube.</p>
+    <a class="youtube-button" href="https://www.youtube.com/@StudyNest121" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+    <div class="youtube-support">
+      <h3>Enjoyed our video?</h3>
+      <p>Share it with parents, students and friends, and support StudyNest as we create more helpful learning content.</p>
+      <div class="youtube-actions">
+        <button type="button" class="share-video" onclick="shareStudyNest()">🔗 Share Video</button>
+        <a href="https://www.youtube.com/@StudyNest121" target="_blank" rel="noopener" class="subscribe-video">▶ Subscribe on YouTube</a>
+        <a href="#contact" class="support-video">💛 Support Our Videos</a>
+      </div>
+      <p id="shareStatus" class="share-status" aria-live="polite"></p>
+    </div>
+
+  </div>
+  <div class="youtube-card">
+    <div class="youtube-icon">▶</div>
+    <strong>@StudyNest121</strong>
+    <span>StudyNest YouTube Channel</span>
+  </div>
 </section>
 
 <section id="contact" class="contact section">
@@ -137,5 +170,23 @@ document.getElementById('parentForm').onsubmit=e=>{
 }
 ;
 </script>
+
+<script>
+function shareStudyNest(){
+  const url='https://www.youtube.com/@StudyNest121';
+  if(navigator.share){
+    navigator.share({title:'StudyNest on YouTube',text:'Watch StudyNest learning content on YouTube.',url:url}).catch(()=>{});
+  }else if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(()=>{
+      const s=document.getElementById('shareStatus');
+      if(s) s.textContent='YouTube link copied — share it with your friends!';
+    });
+  }else{
+    const s=document.getElementById('shareStatus');
+    if(s) s.textContent=url;
+  }
+}
+</script>
+
 </body>
 </html>

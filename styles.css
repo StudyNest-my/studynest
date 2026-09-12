@@ -47,3 +47,22 @@ nav a:nth-child(1){color:#5a70ce}nav a:nth-child(2){color:#f45bb6}nav a:nth-chil
 .send{background:linear-gradient(135deg,#ff5db1,#ff8a3d);box-shadow:0 8px 18px #ff5db133}
 .whatsapp-button{background:linear-gradient(135deg,#17b95a,#31d477);box-shadow:0 10px 25px #17b95a44}
 footer{background:#fffdf9}
+
+.youtube-section{background:linear-gradient(135deg,#ffe1ef,#e7e1ff,#d7faf2);display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.youtube-kicker{display:inline-block;background:#fff;border-radius:30px;padding:9px 14px;font-size:12px;font-weight:900;color:#d72b79}
+.youtube-section h2{font-size:clamp(38px,5vw,62px);line-height:1;margin:14px 0}
+.youtube-section p{color:#5f6975;max-width:520px;font-size:17px}
+.youtube-button{display:inline-flex;margin-top:16px;padding:14px 20px;border-radius:12px;background:linear-gradient(135deg,#ff3d78,#ff5a3d);color:#fff!important;font-weight:900}
+.youtube-card{min-height:240px;border-radius:28px;background:linear-gradient(145deg,#5c55c8,#df4b9c);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
+.youtube-icon{width:76px;height:54px;border-radius:17px;background:#fff;color:#ef3e58;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:18px}
+.youtube-card strong{font-size:22px}.youtube-card span{margin-top:6px;opacity:.9}
+@media(max-width:900px){.youtube-section{grid-template-columns:1fr;gap:30px}}
+
+.service-note{display:inline-block;margin-top:10px;padding:8px 11px;border-radius:20px;background:#eef5ff;color:#5a70ce;font-weight:800;font-size:13px}
+
+.youtube-support{margin-top:28px;padding-top:24px;border-top:1px solid #ffffff66}
+.youtube-support h3{margin:0 0 7px;font-size:22px}.youtube-support p{font-size:14px;margin:0 0 14px}
+.youtube-actions{display:flex;gap:10px;flex-wrap:wrap}
+.youtube-actions a,.youtube-actions button{border:0;text-decoration:none!important;padding:11px 14px;border-radius:10px;font-weight:900;font:inherit;cursor:pointer}
+.share-video{background:#fff;color:#5c55c8}.subscribe-video{background:#ff416c;color:#fff!important}.support-video{background:#ffd75a;color:#4a3b00!important}
+.share-status{margin-top:10px!important;font-weight:800!important}
