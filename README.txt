@@ -1,17 +1,17 @@
-STUDYNEST — ONE-IMAGE VERSION
+STUDYNEST — PARENT REGISTER + WHATSAPP UPDATE
 
-This version is designed for builders with a strict image limit.
-It uses ONLY ONE uploaded image: studynest-hero.jpg.
-All other visual sections are made with HTML/CSS, so you don't need to upload more images.
+Added:
+- Dedicated Parent Register section
+- Parent name, phone and email
+- Child age / school level
+- Location
+- Multiple subject selection: Mathematics, English, Science, Bahasa Melayu, Chinese, Other
+- Preferred tuition time
+- Optional message
+- Floating WhatsApp button
 
-Files:
-- index.html
-- styles.css
-- studynest-hero.jpg
+IMPORTANT:
+The WhatsApp button currently uses a placeholder number 60123456789.
+Replace it in index.html with the real StudyNest WhatsApp number before publishing.
 
-Free publishing:
-1. Upload these files to a GitHub repository and enable GitHub Pages, or
-2. Drag the folder into Netlify.
-
-The enquiry form is a demo. Connect it to Formspree, Netlify Forms, email, or WhatsApp before using it for real leads.
-Replace the illustrative tuition rates with your actual rates.
+The forms are front-end demo forms until connected to an email/form service.
