@@ -8,14 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
 <link href="./StudyNest _ Home Tutor_files/css2" rel="stylesheet">
 <link rel="stylesheet" href="./StudyNest _ Home Tutor_files/styles.css">
-<style>
-.video-link{display:block;text-decoration:none}
-.video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#07111f;border-radius:14px;overflow:hidden;margin-bottom:16px}
-.video-frame video{display:block;width:100%;height:100%;object-fit:cover}
-.whatsapp-choice{position:fixed;right:22px;bottom:22px;z-index:20;display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:14px;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.2)}
-.whatsapp-choice strong{font-size:13px;margin-bottom:2px}
-.whatsapp-choice a{display:block;padding:7px 10px;border-radius:8px;background:#f1f8f4;color:#176b3a;font-size:12px;font-weight:600}
-</style>
 </head>
 <body>
 <header>
@@ -145,16 +137,14 @@
 
   </div>
   <div class="youtube-card">
-    <a class="video-link" href="https://youtu.be/58c38OUNVpQ" target="_blank" rel="noopener" aria-label="Watch the full StudyNestNetwork video on YouTube">
-      <div class="video-frame">
-        <video controls playsinline preload="metadata">
-          <source src="./Squishy%20squad_1%20short.mp4" type="video/mp4">
-          Your browser does not support video playback.
-        </video>
-      </div>
+    <a href="https://youtu.be/58c38OUNVpQ" target="_blank" rel="noopener" aria-label="Watch the full StudyNestNetwork video on YouTube">
+      <video controls playsinline preload="metadata" style="width:100%;border-radius:14px;display:block;">
+        <source src="./Squishy%20squad_1%20short.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
     </a>
     <strong>StudyNestNetwork</strong>
-    <span>Click the preview to watch the full video on YouTube</span>
+    <span>StudyNest YouTube Channel</span>
   </div>
 </section>
 
@@ -168,13 +158,7 @@
     <button class="send">Send</button><p id="status"></p>
   </form>
 </section>
-<div class="whatsapp-choice">
-  <strong>💬 How can we help you?</strong>
-  <a href="https://wa.me/60162818368?text=Hi%20StudyNestNetwork%2C%20I%20would%20like%20to%20ask%20about%20Home%20Tuition." target="_blank" rel="noopener">🏠 Home Tuition</a>
-  <a href="https://wa.me/60162818368?text=Hi%20StudyNestNetwork%2C%20I%20would%20like%20to%20ask%20about%20Online%20Class." target="_blank" rel="noopener">💻 Online Class</a>
-  <a href="https://wa.me/60162818368?text=Hi%20StudyNestNetwork%2C%20I%20would%20like%20to%20ask%20about%20Subjects%20and%20Fees." target="_blank" rel="noopener">📚 Subjects &amp; Fees</a>
-  <a href="https://wa.me/60162818368?text=Hi%20StudyNestNetwork%2C%20I%20would%20like%20to%20ask%20about%20becoming%20a%20Tutor." target="_blank" rel="noopener">👨‍🏫 Become a Tutor</a>
-</div></main>
+<a class="whatsapp-button" href="#" onclick="openStudyNestWhatsApp(event)" aria-label="Chat with StudyNest on WhatsApp">💬 WhatsApp</a></main>
 
 <footer><a class="logo" href="https://studynest-my.github.io/studynest/#home"><b>Study</b><span>Nest</span></a><p>Small steps • Big dreams</p><p>© <span id="year">2026</span> StudyNest</p></footer>
 <script>
@@ -209,5 +193,24 @@ function shareStudyNest(){
 }
 </script>
 
+
+
+<script>
+function openStudyNestWhatsApp(e){
+  e.preventDefault();
+  const choice = prompt(
+    "How can we help you?\n\n1 = Home Tuition\n2 = Online Class\n3 = Subjects & Fees\n4 = Become a Tutor\n\nPlease enter 1, 2, 3 or 4:"
+  );
+  const messages = {
+    "1":"Hi StudyNestNetwork, I would like to ask about Home Tuition.",
+    "2":"Hi StudyNestNetwork, I would like to ask about Online Class.",
+    "3":"Hi StudyNestNetwork, I would like to ask about Subjects & Fees.",
+    "4":"Hi StudyNestNetwork, I would like to ask about becoming a Tutor."
+  };
+  if(messages[choice]){
+    window.open("https://wa.me/60162818368?text="+encodeURIComponent(messages[choice]), "_blank");
+  }
+}
+</script>
 
 </body></html>
