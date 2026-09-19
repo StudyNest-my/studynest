@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>StudyNest | Home Tutor</title>
+<title>StudyNest | Home Tuition</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -11,11 +11,11 @@
 </head>
 <body>
 <header>
-  <a class="logo" href="#home"><b>Study</b><span>Nest</span></a>
+  <a class="logo" href="#home"><b>Study</b><span>Nest</span><small>Home Tuition</small></a>
   <button class="menu" aria-label="Menu">☰</button>
   <nav>
     <a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why Home Tuition &amp; Online Classes?</a><p class="service-note">💻 Live Online Classes also available</p>
-<a href="#rates">Tuition Rates</a><a href="#youtube">YouTube</a><a class="register" href="#contact">Register Now</a>
+    <a href="#rates">Tuition Rates</a><a href="#parent-register">Parent Register</a><a href="#youtube">YouTube</a><a href="#tutor">Become a Home Tutor</a><a class="register" href="#contact">Register Now</a>
   </nav>
 </header>
 
@@ -27,7 +27,7 @@
     <h1>HOME <span>TUTOR</span></h1>
     <p>Flexible scheduling, maximum results.</p>
     <p class="sub">Tell us what your child needs, choose preferred subjects and time slots, and find a suitable tutor.</p>
-<a href="https://forms.gle/qvHagMtuiBFHEc5i9" target="_blank">Parent Register</a>
+    <div class="hero-buttons"><a class="cta" href="#parent-register">Parent Register →</a><a class="secondary-cta" href="#contact">Find a Tutor</a></div>
   </div>
 </section>
 
@@ -42,7 +42,7 @@
 </section>
 
 <section id="why" class="section why">
-  <div class="why-art"><div class="circle">📚</div><div class="book b1">MATH</div><div class="book b2">ENGLISH</div><div class="book b3">SCIENCE</div></div>
+  <div class="why-art why-image-card"><img src="./why-home-tuition.png" alt="StudyNest home tuition learning at home"></div>
   <div><small>WHY HOME TUITION?</small><h2>Small steps today. Big dreams tomorrow.</h2>
   <p>Personal attention gives students space to ask questions, practise at their pace and grow in confidence.</p>
   <ul><li><b>Personalised tutor matching</b><br>Find a tutor suited to your subject and level.</li>
@@ -62,7 +62,7 @@
 
 <section id="tutor" class="tutor">
   <div><small>BECOME A HOME TUTOR</small><h2>Turn your knowledge into meaningful impact.</h2><p>Join the StudyNest tutor network and enjoy flexible teaching opportunities.</p></div>
-  <a class="cta" href="https://forms.gle/xh7sZWVsqL12Ev7R9" target="_blank">Apply as a Tutor →</a>
+  <a class="cta" href="#contact">Apply as a Tutor →</a>
 </section>
 
 <section id="parent-register" class="parent-register section">
@@ -150,7 +150,7 @@
 <a class="whatsapp-button" href="#" onclick="openStudyNestWhatsApp(event)" aria-label="Chat with StudyNest on WhatsApp">💬 WhatsApp</a>
 </main>
 
-<footer><a class="logo" href="#home"><b>Study</b><span>Nest</span></a><p>Small steps • Big dreams</p><p>© <span id="year">2026</span> StudyNest</p></footer>
+<footer><a class="logo" href="#home"><b>Study</b><span>Nest</span><small>Home Tuition</small></a><p>Small steps • Big dreams</p><p>© <span id="year">2026</span> StudyNest</p></footer>
 
 <script>
 document.querySelector('.menu').onclick=()=>document.querySelector('nav').classList.toggle('open');
@@ -188,7 +188,7 @@ function openStudyNestWhatsApp(e){
     "4":"Hi StudyNestNetwork, I would like to ask about becoming a Tutor."
   };
   if(messages[choice]){
-    window.open("https://wa.me/60166013282?text="+encodeURIComponent(messages[choice]), "_blank");
+    window.open("https://wa.me/60162818368?text="+encodeURIComponent(messages[choice]), "_blank");
   }
 }
 </script>

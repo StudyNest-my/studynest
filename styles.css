@@ -66,3 +66,10 @@ footer{background:#fffdf9}
 .youtube-actions a,.youtube-actions button{border:0;text-decoration:none!important;padding:11px 14px;border-radius:10px;font-weight:900;font:inherit;cursor:pointer}
 .share-video{background:#fff;color:#5c55c8}.subscribe-video{background:#ff416c;color:#fff!important}.support-video{background:#ffd75a;color:#4a3b00!important}
 .share-status{margin-top:10px!important;font-weight:800!important}
+/* StudyNest Home Tuition branding */
+.logo{position:relative;display:inline-flex;align-items:center;gap:0;text-decoration:none}
+.logo small{display:block;font-size:.48em;line-height:1;margin-left:8px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+
+/* Why Home Tuition image */
+.why-image-card{height:auto;min-height:390px;background:#fff;border-radius:30px;box-shadow:0 14px 35px #153b4212;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.why-image-card img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover}
