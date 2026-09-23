@@ -66,14 +66,3 @@ footer{background:#fffdf9}
 .youtube-actions a,.youtube-actions button{border:0;text-decoration:none!important;padding:11px 14px;border-radius:10px;font-weight:900;font:inherit;cursor:pointer}
 .share-video{background:#fff;color:#5c55c8}.subscribe-video{background:#ff416c;color:#fff!important}.support-video{background:#ffd75a;color:#4a3b00!important}
 .share-status{margin-top:10px!important;font-weight:800!important}
-/* StudyNest Home Tuition branding */
-.logo{position:relative;display:inline-flex;align-items:center;gap:0;text-decoration:none}
-.logo small{display:block;font-size:.48em;line-height:1;margin-left:8px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
-
-/* Why Home Tuition image */
-.why-image-card{height:auto;min-height:390px;background:#fff;border-radius:30px;box-shadow:0 14px 35px #153b4212;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.why-image-card img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:22px}
-
-
-.google-form-card{background:#fff;border-radius:22px;padding:32px;box-shadow:0 12px 40px #153b4212;text-align:center;border:2px solid #e8ddff}.google-form-card h3{font-size:26px;margin:0 0 10px;color:#5a70ce}.google-form-card p{color:#65737a;margin:0 auto 22px;max-width:520px}.google-form-button{display:inline-flex;text-decoration:none;align-items:center;justify-content:center}
-.whatsapp-button{width:56px;height:56px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:29px;line-height:1}.whatsapp-button svg{width:30px;height:30px;fill:#fff}

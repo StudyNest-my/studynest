@@ -1,13 +1,13 @@
-StudyNest – Home Tuition
+STUDYNEST — COLOURFUL VERSION
 
-Clean final website package.
-- Original StudyNest colourful design
-- Home Tuition branding
-- Updated Why Home Tuition image inside its card
-- Colourful section backgrounds
-- Round WhatsApp icon
-- Parent Registration connected to the supplied Google Form
-- Tutor Registration connected to the supplied Google Form
-- YouTube video and channel section
+Includes:
+- Colourful StudyNest design refresh
+- Parent Register
+- Multiple subject selection
+- Child age / school level
+- Location
+- Preferred tuition time
+- WhatsApp button using +6016 2818368
 
-Upload all files in this folder to the StudyNest-my/studynest GitHub repository.
+Upload/replace index.html and styles.css in the existing GitHub repository.
+Keep studynest-hero.jpg.
