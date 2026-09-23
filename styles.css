@@ -93,3 +93,15 @@ footer{background:#fffdf9}
 .registration-points li span{font-size:21px;line-height:1}
 .tutor-registration .registration-points{max-width:560px;margin-left:auto;margin-right:auto}
 footer p a{color:#087d7c;font-weight:900;text-decoration:none}
+/* Distinct, soft colour for each StudyNest section */
+body{background:#fff8ee}
+#services{background:linear-gradient(145deg,#fff1d6 0%,#fff9ed 55%,#ffe9ec 100%)}
+#services .grid article{background:#fffdf9;border-color:#f5d9c2}
+#why{background:linear-gradient(135deg,#dcf7ed 0%,#eaf9ff 65%,#f3efff 100%)}
+#rates{background:linear-gradient(145deg,#f0eaff 0%,#faf3ff 55%,#ffeef5 100%)}
+#rates .prices>div{box-shadow:0 10px 25px #6a55a012}
+#parent-register{background:linear-gradient(135deg,#ffe8ef 0%,#fff4e0 52%,#f5ecff 100%)}
+#tutor-register{background:linear-gradient(135deg,#d9f3ee 0%,#e5f8f2 55%,#e9f1ff 100%)}
+#contact{background:linear-gradient(135deg,#e8f4ff 0%,#f1efff 55%,#fff0e7 100%)}
+footer{background:#fff0da}
+@media(max-width:700px){#services,#why,#rates,#parent-register,#tutor-register,#contact{background-size:cover}.google-form-card{box-shadow:0 12px 30px #153b4217}}
