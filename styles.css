@@ -85,3 +85,11 @@ footer{background:#fffdf9}
 .form-fallback{font-size:14px}.form-fallback a{color:#087d7c;font-weight:900}
 .tutor-registration{background:#eaf8f4}.tutor-registration .google-form-card{max-width:900px;margin:auto}
 @media(max-width:700px){.registration-frame{height:780px}.google-form-card{padding:14px}}
+
+.form-note{font-size:13px;margin-top:15px!important}.tutor-registration .google-form-card{text-align:center}
+.card-domain{display:inline-block;color:#087d7c;background:#e8f8f3;border-radius:99px;padding:5px 12px;font-size:12px;font-weight:900;letter-spacing:.3px;margin-bottom:14px}
+.registration-points{list-style:none;padding:0;margin:20px 0 24px;display:grid;gap:10px;text-align:left}
+.registration-points li{display:flex;align-items:center;gap:12px;background:#f5f9ff;border:1px solid #e5edf6;border-radius:12px;padding:10px 14px;font-weight:800;color:#244d59}
+.registration-points li span{font-size:21px;line-height:1}
+.tutor-registration .registration-points{max-width:560px;margin-left:auto;margin-right:auto}
+footer p a{color:#087d7c;font-weight:900;text-decoration:none}
