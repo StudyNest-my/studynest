@@ -65,7 +65,7 @@
 
 <section id="tutor" class="tutor">
   <div><small>BECOME A HOME TUTOR</small><h2>Turn your knowledge into meaningful impact.</h2><p>Join the StudyNest tutor network and enjoy flexible teaching opportunities.</p></div>
-  <a class="cta" href="#contact">Apply as a Tutor →</a>
+  <a class="cta" href="#tutor-register">Apply as a Tutor →</a>
 </section>
 
 <section id="parent-register" class="parent-register section">
@@ -79,43 +79,20 @@
       <div>✓ Home or online options</div>
     </div>
   </div>
-  <form id="parentForm">
-    <div class="row">
-      <input required name="parentName" placeholder="Parent name*">
-      <input required name="phone" placeholder="Phone number*">
-    </div>
-    <input required name="email" type="email" placeholder="Email address*">
-    <div class="row">
-      <input required name="childLevel" placeholder="Child's age / school level*">
-      <input required name="location" placeholder="Area / location*">
-    </div>
-    <fieldset class="subjects">
-      <legend>Subjects needed* (select all that apply)</legend>
-      <label><input type="checkbox" name="subjects" value="Mathematics"> Mathematics</label>
-      <label><input type="checkbox" name="subjects" value="English"> English</label>
-      <label><input type="checkbox" name="subjects" value="Science"> Science</label>
-      <label><input type="checkbox" name="subjects" value="Bahasa Melayu"> Bahasa Melayu</label>
-      <label><input type="checkbox" name="subjects" value="Chinese"> Chinese</label>
-      <label><input type="checkbox" name="subjects" value="Other"> Other</label>
-    </fieldset>
-    <select required name="classMode">
-      <option value="">Preferred tuition mode*</option>
-      <option>Home Tuition</option>
-      <option>Online Class</option>
-      <option>Either Home Tuition or Online Class</option>
-    </select>
-    <select required name="time">
-      <option value="">Preferred tuition time*</option>
-      <option>Weekday morning</option>
-      <option>Weekday afternoon</option>
-      <option>Weekday evening</option>
-      <option>Weekend</option>
-      <option>Flexible</option>
-    </select>
-    <textarea name="message" placeholder="Anything else we should know?"></textarea>
-    <button class="send" type="submit">Register as a Parent</button>
-    <p id="parentStatus"></p>
-  </form>
+  <div class="google-form-card">
+    <h3>Parent Registration</h3>
+    <p>Complete the StudyNest parent registration form to tell us about your child, subjects and preferred tuition schedule.</p>
+    <iframe class="registration-frame" title="StudyNest Parent Registration" src="https://docs.google.com/forms/d/11pi2UzPlisWPpMq-Kglst6LLaXJRZHJDyqkiLo8fSUY/viewform?embedded=true" loading="lazy">Loading Parent Registration…</iframe>
+    <p class="form-fallback">If the form does not appear, <a href="https://docs.google.com/forms/d/11pi2UzPlisWPpMq-Kglst6LLaXJRZHJDyqkiLo8fSUY/viewform" target="_blank" rel="noopener">open Parent Registration here</a>.</p>
+  </div>
+</section>
+
+<section id="tutor-register" class="section tutor-registration">
+  <div class="heading"><small>TUTOR REGISTRATION</small><h2>Apply to become a StudyNest tutor</h2></div>
+  <div class="google-form-card">
+    <iframe class="registration-frame" title="StudyNest Tutor Registration" src="https://docs.google.com/forms/d/1vL3PT4thulQlzmq-fTE9Gz2mO_TA7KZsceokpOAn-kY/viewform?embedded=true" loading="lazy">Loading Tutor Registration…</iframe>
+    <p class="form-fallback">If the form does not appear, <a href="https://docs.google.com/forms/d/1vL3PT4thulQlzmq-fTE9Gz2mO_TA7KZsceokpOAn-kY/viewform" target="_blank" rel="noopener">open Tutor Registration here</a>.</p>
+  </div>
 </section>
 
 <section id="youtube" class="youtube-section section">
@@ -142,13 +119,12 @@
 
 <section id="contact" class="contact section">
   <div><small>REGISTER NOW</small><h2>Let's find the right tutor.</h2><p>Complete this short enquiry and we'll help you with the next step.</p><div class="contact-info">📱 Flexible scheduling<br>📚 Multiple subjects<br>⭐ Personalised matching</div></div>
-  <form id="form">
-    <div class="row"><input required name="name" placeholder="First name*"><input required name="phone" placeholder="Phone number*"></div>
-    <input name="email" type="email" placeholder="Email address">
-    <select name="interest"><option>I'm looking for a home tutor</option><option>I'm interested in online tuition</option><option>I want to become a tutor</option></select>
-    <textarea name="message" required placeholder="Message*"></textarea>
-    <button class="send" type="submit">Send</button><p id="status"></p>
-  </form>
+  <div class="google-form-card contact-actions">
+    <h3>Choose your registration</h3>
+    <p>Open the correct StudyNest form and submit your details there.</p>
+    <a class="send google-form-button" href="https://docs.google.com/forms/d/11pi2UzPlisWPpMq-Kglst6LLaXJRZHJDyqkiLo8fSUY/viewform" target="_blank" rel="noopener">Parent Registration →</a>
+    <a class="send google-form-button tutor-form-button" href="https://docs.google.com/forms/d/1vL3PT4thulQlzmq-fTE9Gz2mO_TA7KZsceokpOAn-kY/viewform" target="_blank" rel="noopener">Tutor Registration →</a>
+  </div>
 </section>
 <a class="whatsapp-button" href="#" onclick="openStudyNestWhatsApp(event)" aria-label="Chat with StudyNest on WhatsApp">💬 WhatsApp</a>
 </main>
@@ -159,16 +135,8 @@
 document.querySelector('.menu').onclick=()=>document.querySelector('nav').classList.toggle('open');
 document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));
 document.getElementById('year').textContent=new Date().getFullYear();
-document.getElementById('form').onsubmit=e=>{e.preventDefault();document.getElementById('status').textContent='Thank you! Your enquiry has been recorded on this demo page.';e.target.reset()}
-document.getElementById('parentForm').onsubmit=e=>{
-  e.preventDefault();
-  const selected=[...document.querySelectorAll('#parentForm input[name="subjects"]:checked')];
-  if(!selected.length){document.getElementById('parentStatus').textContent='Please select at least one subject.';return;}
-  document.getElementById('parentStatus').textContent='Thank you! Your parent registration is ready. Connect this form to email/WhatsApp before using it for real registrations.';
-  e.target.reset();
-};
 function shareStudyNest(){
-  const url='https://www.youtube.com/@StudyNest121';
+  const url='https://www.youtube.com/@StudyNest-CC';
   if(navigator.share){
     navigator.share({title:'StudyNest on YouTube',text:'Watch StudyNest learning content on YouTube.',url:url}).catch(()=>{});
   }else if(navigator.clipboard){
@@ -191,7 +159,7 @@ function openStudyNestWhatsApp(e){
     "4":"Hi StudyNestNetwork, I would like to ask about becoming a Tutor."
   };
   if(messages[choice]){
-    window.open("https://wa.me/60162818368?text="+encodeURIComponent(messages[choice]), "_blank");
+    window.open("https://wa.me/60166013282?text="+encodeURIComponent(messages[choice]), "_blank");
   }
 }
 </script>
